@@ -9,8 +9,6 @@ const StyledAppBar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: black;
 `;
 
 const AppBarContainer = styled.div`
@@ -21,9 +19,9 @@ const AppBarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 30px 0 30px;
+  padding: 0 60px 0 60px;
 
-  max-width: 1760px;
+  max-width: 1500px;
 `;
 
 const AppBarNavigation = styled.div`

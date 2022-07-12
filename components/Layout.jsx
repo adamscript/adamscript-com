@@ -15,33 +15,30 @@ const StyledSection = styled.div`
 
     justifyContent: center;
     alignItems: center;
-
-    background-color: grey;
 `;
 
 const MainSection = styled.div`
-  flex: 0 0 1230px;
-  background-color: green;
+  flex: 0 0 1200px;
 
-  @media (max-width: 1230px){
+  background-color: black;
+
+  @media (max-width: 1200px){
     flex: 1;
   }
 `;
 
 const LeftMargin = styled.div`
   flex: 1;
-  background-color: red;
 
-  @media (max-width: 1230px){
+  @media (max-width: 1200px){
     display: none;
   }
 `;
 
 const RightMargin = styled.div`
   flex: 1;
-  background-color: blue;
 
-  @media (max-width: 1230px){
+  @media (max-width: 1200px){
     display: none;
   }
 `;

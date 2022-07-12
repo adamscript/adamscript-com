@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const StyledTypography = styled.p`
+    display: inline-flex;
+
     margin: ${props => props.margin ? props.margin : '0'};
     padding: ${props => props.padding ? props.padding : '0'};
 

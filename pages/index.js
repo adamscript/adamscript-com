@@ -1,10 +1,18 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Button from '../components/Button'
+import Chip from '../components/Chip'
+import Grid from '../components/Grid'
+import Icon from '../components/Icon'
 import { Layout, Section } from '../components/Layout'
 import Typography from '../components/Typography'
+import Vercel from '../public/vercel.svg'
 
 export default function Home() {
+
+  const handleClick = () => {
+    console.log('clicked');
+  }
+
   return (
     <div>
       <Head>
@@ -19,9 +27,62 @@ export default function Home() {
             <Typography size="h6" color="secondary">Hello World h6</Typography>
             <Typography size="h5" weight="bold">Hello World h5</Typography>
             <Typography size="h2" weight="black">Hello World h2</Typography>
-            <Typography size="caption" weight="light" slab>Hello World caption text</Typography>
-            <Button color="black" width="98px"><Typography weight="bold">Click me</Typography></Button>
+            <Typography size="caption" weight="light" slab>hello world caption text</Typography>
+            <Button width="98px"><Typography color="black" weight="bold">Click me</Typography></Button>
+            <Button width="98px" outlined><Typography color="secondary" weight="bold">Button</Typography></Button>
             <Typography>Hello World body</Typography>
+            <Icon label="Technology" size={4}>
+              <Vercel />
+            </Icon>
+            <Icon label="Technology" onClick={handleClick} hideLabel size={2}>
+              <Vercel />
+            </Icon>
+            <Chip>React</Chip>
+            <Chip>Styled Components</Chip>
+            <Grid size={128} gap={30}>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+              <Icon label="Technology" size={4}>
+                <Vercel />
+              </Icon>
+            </Grid>
           </div>
           <div></div>
         </Section>
