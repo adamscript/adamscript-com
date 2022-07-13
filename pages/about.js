@@ -1,6 +1,5 @@
 import Head from 'next/head'
-import { Layout, Section } from '../components/Layout'
-import Typography from '../components/Typography'
+import { Layout, Section, Typography } from '../components'
 
 export default function About() {
   return (

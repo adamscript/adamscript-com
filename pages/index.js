@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import Button from '../components/Button'
-import Chip from '../components/Chip'
-import Grid from '../components/Grid'
-import Icon from '../components/Icon'
-import { Layout, Section } from '../components/Layout'
-import Typography from '../components/Typography'
 import Vercel from '../public/vercel.svg'
+import Tomateto from '../public/icons/logos/tomatetodark-icon.svg'
+
+import { Button, Chip, Icon, Layout, Section, Typography } from '../components';
 
 export default function Home() {
 
@@ -36,6 +33,9 @@ export default function Home() {
             </Icon>
             <Icon label="Technology" onClick={handleClick} hideLabel size={2}>
               <Vercel />
+            </Icon>
+            <Icon label="Tomateto" onClick={handleClick} hideLabel size={2}>
+              <Tomateto />
             </Icon>
             <Chip>React</Chip>
             <Chip>Styled Components</Chip>
