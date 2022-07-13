@@ -22,6 +22,7 @@ const StyledTypography = styled.p`
         props.weight === 'black' ? '900' : '400'};
 
     color: ${(props) => 
+        props.color === 'primary' ? props.theme.palette.primary :
         props.color === 'secondary' ? props.theme.palette.secondary : 
         props.color === 'black' ? props.theme.palette.common.black : props.theme.palette.primary};
 

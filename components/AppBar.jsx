@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import Typography from "./Typography";
 import Button from "./Button";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React from "react";
 
 const StyledAppBar = styled.div`
   width: 100%;
@@ -36,17 +39,53 @@ const AppBarNavigation = styled.div`
   gap: 6px;
 `;
 
+const StyledLink = styled.a`
+  color: ${props => props.active ? props.theme.palette.secondary : props.theme.palette.primary};
+  
+  font-weight: ${props => props.active ? 700 : 400};
+  font-family: 'Roboto', sans-serif;
+`;
+
+const Navigation = React.forwardRef((props, ref) => {
+  const router = useRouter();
+
+  const currentRoute = () => {
+    if(router.pathname === `/${props.children.toLowerCase()}` || router.pathname === '/' && props.children === 'Home'){
+        return true;
+    }
+    else{
+        return false;
+    }
+  }
+
+  return(
+      <StyledLink href={props.href} onClick={props.onClick} ref={ref} active={currentRoute()}>{props.children}</StyledLink>
+  )
+})
+
 export default function AppBar(){
     return(
         <StyledAppBar>
           <AppBarContainer>
-            <Typography size="h5" weight="bold" uppercase color="secondary">Adam Darmawan</Typography>
+            <Link href="/">
+              <a>
+                <Typography size="h5" weight="bold" uppercase color="secondary">Adam Darmawan</Typography>
+              </a>
+            </Link>
             <AppBarNavigation>
-              <Typography weight="black" color="secondary">Home</Typography>
-              <Typography>About</Typography>
-              <Typography>Projects</Typography>
-              <Typography>Contact</Typography>
-              <Button width="98px"><Typography color="black" weight="bold">Resume</Typography></Button>
+              <Link href="/" passHref>
+                <Navigation>Home</Navigation>
+              </Link>
+              <Link href="/about" passHref>
+                <Navigation>About</Navigation>
+              </Link>
+              <Link href="/projects" passHref>
+                <Navigation>Projects</Navigation>
+              </Link>
+              <Link href="/contact" passHref>
+                <Navigation>Contact</Navigation>
+              </Link>
+              <Button width="98px" onClick={() => {console.log("resume clicked")}}>Resume</Button>
             </AppBarNavigation>
           </AppBarContainer>
         </StyledAppBar>

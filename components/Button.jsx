@@ -1,4 +1,7 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import styled from "styled-components";
+import Typography from "./Typography";
 
 const StyledButton = styled.button`
     border: ${props => props.outlined ? `2px solid ${props.theme.palette.secondary }` : 'none'};
@@ -7,19 +10,14 @@ const StyledButton = styled.button`
     cursor: pointer;
 
     color: ${props => props.theme.palette.common.black};
-    background-color: ${props => props.theme.palette.secondary}${props => props.outlined && '00'};
+    background-color: ${props => props.theme.palette.secondary}${props => (props.outlined || props.text) && '00'};
 
     width: ${props => props.width ? props.width : '80px'};
     height: ${props => props.height ? props.height : '40px'};
-
-    &:hover{
-        background-color: ${props => props.outlined ? props.theme.palette.secondary + '10' : props.theme.palette.secondary};
-        filter: brightness(${props => props.outlined ? '100%' : '90%'});
-    }
 `;
 
 export default function Button(props){
     return(
-        <StyledButton width={props.width} height={props.height} outlined={props.outlined}>{props.children}</StyledButton>
+        <StyledButton width={props.width} height={props.height} outlined={props.outlined} onClick={props.onClick} text={props.text}><Typography color={props.outlined ? 'secondary' : 'black'} weight='bold'>{props.children}</Typography></StyledButton>
     )
 }
