@@ -27,14 +27,15 @@ const WelcomeText = () => {
   return(
     <>
       <Typography color="secondary" weight="bold" size="h6" slab>Hi, my name is Adam</Typography><br />
-      <Typography weight="medium" size="h2" mdDown="font-size: 48px;">I'm a <Typography weight="black" size="h2" mdDown="font-size: 48px;">software developer</Typography><br />and <span ref={el} /></Typography>
+      <Typography weight="medium" size="h2" mdDown="font-size: 48px;">I'm a <span style={{ fontWeight: 900 }}>software developer</span></Typography>
+      <Typography weight="medium" size="h2" mdDown="font-size: 48px;">and <span ref={el} /></Typography>
 
       <div id="typed-strings">
         <p>I built Tomateto</p>
         <p>I build websites</p>
         <p>I made video games</p>
         <p>I wrote a script for 3D Animation</p>
-        <p>I am learning about web development</p>
+        <p>I am learning web development</p>
         <p>I love technologies</p>
         <p>I love movies</p>
         <p>I love video games</p>

@@ -67,10 +67,10 @@ export default function Card(props){
                         {props.children[2]}
                     </StyledTagsContainer>
                     <Typography size="h4" weight="bold">
-                        {props.children[0]}
+                        {props.children[0].props.children}
                     </Typography>
                     <Typography>
-                        {props.children[1]}
+                        {props.children[1].props.children}
                     </Typography>
                 </StyledContentContainer>
                 <StyledMediaContainer>
