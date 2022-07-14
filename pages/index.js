@@ -1,8 +1,50 @@
 import Head from 'next/head'
-import Vercel from '../public/vercel.svg'
-import Tomateto from '../public/icons/logos/tomatetodark-icon.svg'
+import Typed from 'typed.js'
 
-import { Button, Chip, Icon, Layout, Section, Typography } from '../components';
+import { Button, Chip, Container, Icon, Layout, Section, Typography } from '../components';
+import { useEffect, useRef } from 'react'
+
+const WelcomeText = () => {
+  const el = useRef(null);
+  const typed = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      stringsElement: '#typed-strings',
+      typeSpeed: 50,
+      backSpeed: 50,
+      smartBackspace: true,
+      loop: true
+    };
+
+    typed.current = new Typed(el.current, options);
+
+    return () => {
+      typed.current.destroy();
+    }
+  }, [])
+
+  return(
+    <>
+      <Typography color="secondary" weight="bold" size="h6" slab>Hi, my name is Adam</Typography><br />
+      <Typography weight="medium" size="h2" mdDown="font-size: 48px;">I'm a <Typography weight="black" size="h2" mdDown="font-size: 48px;">software developer</Typography><br />and <span ref={el} /></Typography>
+
+      <div id="typed-strings">
+        <p>I built Tomateto</p>
+        <p>I build websites</p>
+        <p>I made video games</p>
+        <p>I wrote a script for 3D Animation</p>
+        <p>I am learning about web development</p>
+        <p>I love technologies</p>
+        <p>I love movies</p>
+        <p>I love video games</p>
+        <p>I love music</p>
+        <p>I love cats</p>
+        <p>I love you</p>
+      </div>
+    </>
+  )
+}
 
 export default function Home() {
 
@@ -21,24 +63,9 @@ export default function Home() {
       <Layout>
         <Section>
           <div>
-            <Typography size="h6" color="secondary">Hello World h6</Typography>
-            <Typography size="h5" weight="bold">Hello World h5</Typography>
-            <Typography size="h2" weight="black">Hello World h2</Typography>
-            <Typography size="caption" weight="light" slab>hello world caption text</Typography>
-            <Button width="98px">Click me</Button>
-            <Button width="98px" outlined>Button</Button>
-            <Typography>Hello World body</Typography>
-            <Icon label="Technology" size={4}>
-              <Vercel />
-            </Icon>
-            <Icon label="Technology" onClick={handleClick} hideLabel size={2}>
-              <Vercel />
-            </Icon>
-            <Icon label="Tomateto" onClick={handleClick} hideLabel size={2}>
-              <Tomateto />
-            </Icon>
-            <Chip>React</Chip>
-            <Chip>Styled Components</Chip>
+            <Container height="calc(100vh - 80px)" justifyContent="center" padding="30px">
+              <WelcomeText />
+            </Container>
           </div>
           <div></div>
         </Section>

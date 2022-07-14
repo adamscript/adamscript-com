@@ -3,7 +3,9 @@ import Typography from "./Typography";
 import Button from "./Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React from "react";
+import { forwardRef } from "react";
+import MenuIcon from "../public/icons/menu-icon.svg";
+import Icon from "./Icon";
 
 const StyledAppBar = styled.div`
   width: 100%;
@@ -22,7 +24,7 @@ const AppBarContainer = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 60px 0 60px;
+  padding: 0 30px 0 30px;
 
   max-width: 1500px;
 `;
@@ -37,6 +39,14 @@ const AppBarNavigation = styled.div`
   flex: 0 0 450px;
 
   gap: 6px;
+
+  @media (max-width: 900px){
+    ${props => props.mdDown}
+  }
+
+  @media (min-width: 900px){
+    ${props => props.mdUp}
+  }
 `;
 
 const StyledLink = styled.a`
@@ -46,7 +56,7 @@ const StyledLink = styled.a`
   font-family: 'Roboto', sans-serif;
 `;
 
-const Navigation = React.forwardRef((props, ref) => {
+const Navigation = forwardRef((props, ref) => {
   const router = useRouter();
 
   const currentRoute = () => {
@@ -72,7 +82,7 @@ export default function AppBar(){
                 <Typography size="h5" weight="bold" uppercase color="secondary">Adam Darmawan</Typography>
               </a>
             </Link>
-            <AppBarNavigation>
+            <AppBarNavigation mdDown="display: none;">
               <Link href="/" passHref>
                 <Navigation>Home</Navigation>
               </Link>
@@ -86,6 +96,11 @@ export default function AppBar(){
                 <Navigation>Contact</Navigation>
               </Link>
               <Button width="98px" onClick={() => {console.log("resume clicked")}}>Resume</Button>
+            </AppBarNavigation>
+            <AppBarNavigation mdUp="display: none;" mdDown="flex: 1; justify-content: end;">
+              <Icon color="secondary" size={3}>
+                <MenuIcon />
+              </Icon>
             </AppBarNavigation>
           </AppBarContainer>
         </StyledAppBar>

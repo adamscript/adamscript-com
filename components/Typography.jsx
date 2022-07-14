@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledTypography = styled.p`
-    display: inline-flex;
+    display: inline;
 
     margin: ${props => props.margin ? props.margin : '0'};
     padding: ${props => props.padding ? props.padding : '0'};
@@ -27,10 +27,14 @@ const StyledTypography = styled.p`
         props.color === 'black' ? props.theme.palette.common.black : props.theme.palette.primary};
 
     text-transform: ${props => props.uppercase ? 'uppercase' : 'none'};
+
+    @media (max-width: 900px){
+        ${props => props.mdDown}
+    }
 `;
 
 export default function Typography(props){
     return(
-        <StyledTypography size={props.size} weight={props.weight} color={props.color} slab={props.slab} uppercase={props.uppercase} margin={props.margin} padding={props.padding}>{props.children}</StyledTypography>
+        <StyledTypography size={props.size} weight={props.weight} color={props.color} slab={props.slab} uppercase={props.uppercase} margin={props.margin} padding={props.padding} mdDown={props.mdDown}>{props.children}</StyledTypography>
     )
 }

@@ -5,6 +5,8 @@ const StyledGrid = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(${props => props.size}px, ${props => props.size}px));
     gap: ${props => props.gap}px;
 
+    flex: 1;
+
     align-items: center;
     justify-items: center;
 
