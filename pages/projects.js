@@ -1,5 +1,52 @@
 import Head from 'next/head'
-import { Layout, Section, Typography } from '../components'
+import Image from 'next/image'
+import { Button, Card, Chip, Container, Grid, Icon, Layout, Section, Typography } from '../components'
+
+import TomatetoIllustration from '../public/images/tomateto-illustration.png'
+import ReactIcon from '../public/icons/logos/react-logo.svg'
+
+const FeaturedProject = () => {
+  return(
+    <Container direction="row" width="100%" spacing={96} mdDown="padding: 30px 0 0 0; flex-direction: column-reverse; gap: 30px;">
+      <Container spacing={24}>
+        <Container spacing={4}>
+          <Typography size="caption" color="secondary" weight="bold" slab>Featured Project</Typography>
+          <Typography size="h4" weight="black">Tomateto</Typography>
+        </Container>
+        <Typography size="h6" weight="medium">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </Typography>
+        <Container direction="row" spacing={18}>
+          <Icon size={2} label="React" hideLabel>
+            <ReactIcon />
+          </Icon>
+          <Icon size={2} label="React" hideLabel>
+            <ReactIcon />
+          </Icon>
+          <Icon size={2} label="React" hideLabel>
+            <ReactIcon />
+          </Icon>
+          <Icon size={2} label="React" hideLabel>
+            <ReactIcon />
+          </Icon>
+          <Icon size={2} label="React" hideLabel>
+            <ReactIcon />
+          </Icon>
+          <Icon size={2} label="React" hideLabel>
+            <ReactIcon />
+          </Icon>
+        </Container>
+        <Container direction="row" width="100%" spacing={32}>
+          <Button width="100%">Visit Tomateto</Button>
+          <Button width="100%">View on Github</Button>
+        </Container>
+      </Container>
+      <Container>
+        <Image src={TomatetoIllustration} priority />
+      </Container>
+    </Container>
+  )
+}
 
 export default function Projects() {
   return (
@@ -13,7 +60,58 @@ export default function Projects() {
       <Layout>
         <Section>
           <div>
-            <Typography size="h2" weight="black" color="secondary">Projects</Typography>
+          <Container padding="120px 0 0 0" alignItems="center" width="100%" mdDown="padding: 30px; gap: 30px;">
+            <Container spacing={60} maxWidth="1020px" padding="0 30px 0 30px" mdDown="padding: 0;">
+              <Container width="100%" padding="60px 0 0 0" mdDown="padding: 30px 0 0 0;">
+                <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">Projects</Typography>
+              </Container>
+              <FeaturedProject />
+            </Container>
+          </Container>
+          <Container direction="row" padding="120px 0 120px 0" mdDown="padding: 30px;">  
+            <Grid gap={30} size={360}>
+              <Card href="1" src={TomatetoIllustration}>
+                <p>Ojek League</p>
+                <p>A small Rocket League-like game built with Unity game engine</p>
+                <div>
+                  <Chip>Unity</Chip>
+                  <Chip>C#</Chip>
+                </div>
+              </Card>
+              <Card href="2" src={TomatetoIllustration}>
+                <p>Ojek League</p>
+                <p>A small Rocket League-like game built with Unity game engine</p>
+                <div>
+                  <Chip>Unity</Chip>
+                  <Chip>C#</Chip>
+                </div>
+              </Card>
+              <Card href="3" src={TomatetoIllustration}>
+                <p>Ojek League</p>
+                <p>A small Rocket League-like game built with Unity game engine</p>
+                <div>
+                  <Chip>Unity</Chip>
+                  <Chip>C#</Chip>
+                </div>
+              </Card>
+              <Card href="3" src={TomatetoIllustration}>
+                <p>Ojek League</p>
+                <p>A small Rocket League-like game built with Unity game engine</p>
+                <div>
+                  <Chip>Unity</Chip>
+                  <Chip>C#</Chip>
+                </div>
+              </Card>
+              <Card href="5" src={TomatetoIllustration}>
+                <p>Ojek League</p>
+                <p>A small Rocket League-like game built with Unity game engine</p>
+                <div>
+                  <Chip>Unity</Chip>
+                  <Chip>C#</Chip>
+                </div>
+              </Card>
+            </Grid>
+          </Container>
           </div>
           <div></div>
         </Section>

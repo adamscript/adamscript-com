@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  display: inline;
+}
+
 * {
   box-sizing: border-box;
 }

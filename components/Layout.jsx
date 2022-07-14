@@ -43,6 +43,7 @@ const RightMargin = styled.div`
 const StyledContainer = styled.div`
   display: flex;
   flex-wrap: ${props => props.wrap ? 'wrap' : 'nowrap'};
+  flex: 1;
 
   width: ${props => props.width ? props.width : 'auto'};
   height: ${props => props.height ? props.height : 'auto'};
@@ -59,7 +60,7 @@ const StyledContainer = styled.div`
   padding: ${props => props.padding ? props.padding : '0'};
   margin: ${props => props.margin ? props.margin : '0'};
 
-  /*background-color: #00000030;*/
+  /*background-color: #00000010;*/
 
   @media (max-width: 900px){
     ${props => props.mdDown}

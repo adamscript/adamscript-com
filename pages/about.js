@@ -23,7 +23,7 @@ const StyledImage = styled(Image)`
 
 const SkillIcons = () => {
     return(
-        <Container direction="row" padding="0 120px 60px 120px" mdDown="padding: 30px;">
+        <Container direction="row" padding="0 60px 60px 60px" mdDown="padding: 30px;">
             <Grid size={120} gap={42}>
                 <Icon size={4} label="Javascript (ES6)">
                     <JSIcon />
@@ -78,18 +78,20 @@ export default function About() {
       <Layout>
         <Section>
           <div>
-            <Container padding="120px 0 0 0" alignItems="center">
-                <Container spacing={60} maxWidth="1080px" padding="60px" mdDown="padding: 30px;">
+            <Container padding="180px 0 60px 0" alignItems="center" mdDown="padding: 30px">
+                <Container spacing={60} maxWidth="1020px" padding="0 30px 0 30px" mdDown="padding: 0;">
                     <Container direction="row" spacing={60} mdDown="flex-direction: column;">
                         <Container spacing={60}>
-                            <Typography size="h2" weight="bold" color="secondary">About me</Typography>
-                            <Typography size="h5" weight="medium">
+                            <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">About me</Typography>
+                            <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
                                 Hello again! I'm mostly known as Aji but you can call me Adam, whichever you prefer really. I enjoy learning new things, solving problems, and making stuff especially the ones that you can interact with. 
                             </Typography>
                         </Container>
-                        <StyledImage src={selfPortrait} />
+                        <Container>
+                            <StyledImage src={selfPortrait} />
+                        </Container>
                     </Container>
-                    <Typography size="h5" weight="medium">
+                    <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
                         I graduated with BA in Information Technology from University of Amikom Yogyakarta in 2021.<br /><br />
                         I've been curious about all things programming but that is not until 2017 when I learned programming for the first time that I finally figured out that this is what I want to do professionally.<br /><br />
                         My first programming language is Python, and ever since then I've learned a lot and along my journey I've created many apps with various technologies such as full stack web apps, automation script for 3d animation, and video games. I'm pretty much comfortable with a variety of technologies.<br /><br />
@@ -105,62 +107,66 @@ export default function About() {
         </Section>
         <Section>
             <div>
-                <Container padding="0 0 60px 120px" mdDown="padding: 30px;" spacing={60}>    
-                    <Typography size="h2" weight="bold" color="secondary">Skills</Typography>
-                    <Typography size="h5" weight="medium">
-                        Here are some languages, technologies, and tools that I used in my most recent projects:
-                    </Typography>
+                <Container alignItems="center" mdDown="padding: 0;">
+                    <Container padding="0 30px 60px 30px" width="100%" maxWidth="1020px" mdDown="padding: 30px;" spacing={60}>    
+                        <Typography size="h2" weight="bold" color="secondary">Skills</Typography>
+                        <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
+                            Here are some languages, technologies, and tools that I used in my most recent projects:
+                        </Typography>
+                    </Container>
                 </Container>
                 <SkillIcons />
-                <Container padding="0 120px 180px 120px" spacing={60} mdDown="padding: 60px 30px 60px 30px;">
-                    <Container spacing={24}>
-                        <Typography size="h5" weight="medium">Languages</Typography>
-                        <Container direction="row" spacing={6} wrap>
-                            <Chip>Javascript (ES6)</Chip>
-                            <Chip>Typescript</Chip>
-                            <Chip>Java</Chip>
-                            <Chip>C#</Chip>
-                            <Chip>Python</Chip>
-                            <Chip>HTML</Chip>
-                            <Chip>CSS</Chip>
-                            <Chip>SQL</Chip>
+                <Container alignItems="center" mdDown="padding: 0;">
+                    <Container padding="0 30px 120px 30px" width="100%" maxWidth="1020px" spacing={60} mdDown="padding: 60px 30px 60px 30px;">
+                        <Container spacing={24}>
+                            <Typography size="h5" weight="medium">Languages</Typography>
+                            <Container direction="row" spacing={6} wrap="wrap">
+                                <Chip>Javascript (ES6)</Chip>
+                                <Chip>Typescript</Chip>
+                                <Chip>Java</Chip>
+                                <Chip>C#</Chip>
+                                <Chip>Python</Chip>
+                                <Chip>HTML</Chip>
+                                <Chip>CSS</Chip>
+                                <Chip>SQL</Chip>
+                            </Container>
                         </Container>
-                    </Container>
-                    <Container spacing={24}>
-                        <Typography size="h5" weight="medium">Technologies</Typography>
-                        <Container direction="row" spacing={6} wrap>
-                            <Chip>React</Chip>
-                            <Chip>Redux</Chip>
-                            <Chip>Next.js</Chip>
-                            <Chip>Spring</Chip>
-                            <Chip>Docker</Chip>
-                            <Chip>Azure</Chip>
-                            <Chip>Firebase</Chip>
-                            <Chip>Node.js</Chip>
-                            <Chip>Express.js</Chip>
-                            <Chip>PostgreSQL</Chip>
-                            <Chip>MongoDB</Chip>
+                        <Container spacing={24}>
+                            <Typography size="h5" weight="medium">Technologies</Typography>
+                            <Container direction="row" spacing={6} wrap="wrap">
+                                <Chip>React</Chip>
+                                <Chip>Redux</Chip>
+                                <Chip>Next.js</Chip>
+                                <Chip>Spring Boot</Chip>
+                                <Chip>Docker</Chip>
+                                <Chip>Azure</Chip>
+                                <Chip>Firebase</Chip>
+                                <Chip>Node.js</Chip>
+                                <Chip>Express.js</Chip>
+                                <Chip>PostgreSQL</Chip>
+                                <Chip>MongoDB</Chip>
+                            </Container>
                         </Container>
-                    </Container>
-                    <Container spacing={24}>
-                        <Typography size="h5" weight="medium">Tools & Methodologies</Typography>
-                        <Container direction="row" spacing={6} wrap>
-                            <Chip>Git</Chip>
-                            <Chip>Github Actions</Chip>
-                            <Chip>Lombok</Chip>
-                            <Chip>JUnit</Chip>
-                            <Chip>Mockito</Chip>
-                            <Chip>Unity</Chip>
-                            <Chip>Visual Studio Code</Chip>
-                            <Chip>Intellij IDEA</Chip>
-                            <Chip>Postman</Chip>
-                            <Chip>DBeaver</Chip>
-                            <Chip>Material UI</Chip>
-                            <Chip>CI/CD</Chip>
-                            <Chip>Test Driven Development (TTD)</Chip>
-                            <Chip>REST API</Chip>
-                            <Chip>NoSQL</Chip>
-                            <Chip>Google API (YouTube, Books)</Chip>
+                        <Container spacing={24}>
+                            <Typography size="h5" weight="medium">Tools & Methodologies</Typography>
+                            <Container direction="row" spacing={6} wrap="wrap">
+                                <Chip>Git</Chip>
+                                <Chip>Github Actions</Chip>
+                                <Chip>Lombok</Chip>
+                                <Chip>JUnit</Chip>
+                                <Chip>Mockito</Chip>
+                                <Chip>Unity</Chip>
+                                <Chip>Visual Studio Code</Chip>
+                                <Chip>Intellij IDEA</Chip>
+                                <Chip>Postman</Chip>
+                                <Chip>DBeaver</Chip>
+                                <Chip>Material UI</Chip>
+                                <Chip>CI/CD</Chip>
+                                <Chip>Test Driven Development (TDD)</Chip>
+                                <Chip>REST API</Chip>
+                                <Chip>NoSQL</Chip>
+                                <Chip>Google API (YouTube, Books)</Chip>
+                            </Container>
                         </Container>
                     </Container>
                 </Container>

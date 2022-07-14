@@ -10,7 +10,7 @@ const StyledButton = styled.button`
     cursor: pointer;
 
     color: ${props => props.theme.palette.common.black};
-    background-color: ${props => props.theme.palette.secondary}${props => (props.outlined || props.text) && '00'};
+    background-color: ${props => props.theme.palette.secondary}${props => (props.outlined) && '00'};
 
     width: ${props => props.width ? props.width : '80px'};
     height: ${props => props.height ? props.height : '40px'};
@@ -18,6 +18,6 @@ const StyledButton = styled.button`
 
 export default function Button(props){
     return(
-        <StyledButton width={props.width} height={props.height} outlined={props.outlined} onClick={props.onClick} text={props.text}><Typography color={props.outlined ? 'secondary' : 'black'} weight='bold'>{props.children}</Typography></StyledButton>
+        <StyledButton width={props.width} height={props.height} outlined={props.outlined} onClick={props.onClick}><Typography color={props.outlined ? 'secondary' : 'black'} weight='bold'>{props.children}</Typography></StyledButton>
     )
 }

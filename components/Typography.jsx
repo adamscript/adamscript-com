@@ -9,6 +9,8 @@ const StyledTypography = styled.p`
     font-size: ${props => 
         props.size === 'h6' ? '20px' :
         props.size === 'h5' ? '24px' : 
+        props.size === 'h4' ? '34px' :
+        props.size === 'h3' ? '48px' :
         props.size === 'h2' ? '60px' :
         props.size === 'caption' ? '12px' : '16px'};
 

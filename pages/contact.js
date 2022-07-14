@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Layout, Section, Typography } from '../components'
+import { Container, Layout, Section, Typography } from '../components'
 
 export default function Contact() {
   return (
@@ -13,7 +13,9 @@ export default function Contact() {
       <Layout>
         <Section>
           <div>
-            <Typography size="h2" weight="black" color="secondary">Contact</Typography>
+            <Container padding="180px 120px 0 120px" mdDown="padding: 180px 30px 0 30px;">
+                <Typography size="h2" weight="black" color="secondary">Contact</Typography>
+            </Container>
           </div>
           <div></div>
         </Section>

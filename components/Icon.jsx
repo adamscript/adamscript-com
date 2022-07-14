@@ -25,12 +25,12 @@ const StyledIconWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    gap: 24px;
+    gap: ${props => props.hideLabel || !props.label ? '0' : '24px'};
 `;
 
 export default function Icon(props){
     return(
-        <StyledIconWrapper size={props.size}>
+        <StyledIconWrapper size={props.size} hideLabel={props.hideLabel} label={props.label}>
             {
                 props.onClick ?
                 <StyledIconButton onClick={props.onClick}>
