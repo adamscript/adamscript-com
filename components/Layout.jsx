@@ -1,16 +1,17 @@
+import { useRouter } from 'next/router';
 import styled from "styled-components";
 import AppBar from "./AppBar";
 
 const StyledLayout = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
 `;
 
 const StyledSection = styled.div`
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
 
     justifyContent: center;
     alignItems: center;
@@ -43,7 +44,7 @@ const RightMargin = styled.div`
 const StyledContainer = styled.div`
   display: flex;
   flex-wrap: ${props => props.wrap ? 'wrap' : 'nowrap'};
-  flex: 1;
+  flex: ${props => props.flex ? props.flex : '1'};
 
   width: ${props => props.width ? props.width : 'auto'};
   height: ${props => props.height ? props.height : 'auto'};
@@ -68,6 +69,9 @@ const StyledContainer = styled.div`
 `;
 
 const Layout = (props) => {
+    const router = useRouter();
+    console.log(router.pathname)
+
     return(
         <StyledLayout>
             <AppBar />
@@ -88,7 +92,7 @@ const Section = (props) => {
 
 const Container = (props) => {
     return(
-        <StyledContainer width={props.width} height={props.height} maxWidth={props.maxWidth} spacing={props.spacing} alignItems={props.alignItems} justifyContent={props.justifyContent} direction={props.direction} padding={props.padding} margin={props.margin} mdDown={props.mdDown} wrap={props.wrap}>{props.children}</StyledContainer> 
+        <StyledContainer width={props.width} height={props.height} maxWidth={props.maxWidth} spacing={props.spacing} flex={props.flex} alignItems={props.alignItems} justifyContent={props.justifyContent} direction={props.direction} padding={props.padding} margin={props.margin} mdDown={props.mdDown} wrap={props.wrap}>{props.children}</StyledContainer> 
     )
 }
 

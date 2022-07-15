@@ -21,15 +21,24 @@ p {
 }
 
 body::-webkit-scrollbar {
-  width: 9px;
+  width: 12px;
   background-color: #2C2C2C;
 }
  
 body::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
+  border: 3px solid #2C2C2C;
   border-radius: 6px;
+}
+
+textarea {
+  font-family: inherit;
 }
 
 svg {
   fill: currentColor;
+}
+
+div {
+  color: #D9D9D9;
 }

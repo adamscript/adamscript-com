@@ -29,6 +29,7 @@ const StyledTypography = styled.p`
         props.color === 'black' ? props.theme.palette.common.black : props.theme.palette.primary};
 
     text-transform: ${props => props.uppercase ? 'uppercase' : 'none'};
+    text-align : ${props => props.textAlign ? props.textAlign : 'left'};
 
     @media (max-width: 900px){
         ${props => props.mdDown}
@@ -37,6 +38,6 @@ const StyledTypography = styled.p`
 
 export default function Typography(props){
     return(
-        <StyledTypography size={props.size} weight={props.weight} color={props.color} slab={props.slab} uppercase={props.uppercase} margin={props.margin} padding={props.padding} mdDown={props.mdDown}>{props.children}</StyledTypography>
+        <StyledTypography size={props.size} weight={props.weight} textAlign={props.textAlign} color={props.color} slab={props.slab} uppercase={props.uppercase} margin={props.margin} padding={props.padding} mdDown={props.mdDown}>{props.children}</StyledTypography>
     )
 }

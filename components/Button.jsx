@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Typography from "./Typography";
 
 const StyledButton = styled.button`
-    border: ${props => props.outlined ? `2px solid ${props.theme.palette.secondary }` : 'none'};
+    border: ${props => props.outlined ? `1px solid ${props.theme.palette.secondary }` : 'none'};
     border-radius: 6px;
     display: inline-block;
     cursor: pointer;
