@@ -74,7 +74,7 @@ export default function Card(props){
                     </Typography>
                 </StyledContentContainer>
                 <StyledMediaContainer>
-                    <Image layout="fill" src={props.src} priority />
+                    <Image layout="fill" src={props.src} alt={`Screenshot of ${props.children[0]}`} priority />
                 </StyledMediaContainer>
             </StyledCardContainer>
         </a>

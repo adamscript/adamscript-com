@@ -69,9 +69,6 @@ const StyledContainer = styled.div`
 `;
 
 const Layout = (props) => {
-    const router = useRouter();
-    console.log(router.pathname)
-
     return(
         <StyledLayout>
             <AppBar />

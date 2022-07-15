@@ -83,6 +83,7 @@ const Navigation = forwardRef((props, ref) => {
       <StyledLink href={props.href} onClick={props.onClick} ref={ref} active={currentRoute()}>{props.children}</StyledLink>
   )
 })
+Navigation.displayName = "Navigation";
 
 export default function AppBar(){
 

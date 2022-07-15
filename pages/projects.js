@@ -42,7 +42,7 @@ const FeaturedProject = () => {
         </Container>
       </Container>
       <Container>
-        <Image src={TomatetoIllustration} priority />
+        <Image src={TomatetoIllustration} alt="Illustration of Tomateto" priority />
       </Container>
     </Container>
   )
