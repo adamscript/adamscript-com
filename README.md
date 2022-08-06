@@ -1,34 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+  adamscript.com
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="https://adamscript.com">
+    <img src="https://img.shields.io/badge/vercel-ready-lightgrey" alt="vercel-badge">
+  </a>
+  <a href="https://adamscript.com">
+    <img src="https://img.shields.io/badge/demo-online-brightgreen" alt="demo-badge">
+  </a>
+</p>
 
-First, run the development server:
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/69242299/183228078-e3faa53e-752e-442b-8d12-660654a909dd.png" alt="adamscript-com_screenshot" />
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This is the first iteration of my personal website built with Next.js and hosted with Vercel. For this iteration I tried to not put too many bells and whistles to keep the website simple and informative.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Demo
+Here is the working live demo : <https://adamscript.com>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Built With
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [React](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [styled-components](https://styled-components.com/)
+- [Formspree](https://formspree.io/)
+- [Vercel](https://vercel.com/)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Support
+If you found a bug, please let me know by [opening an issue](https://github.com/adamscript/adamscript-com/issues). Also if you have questions about the project, feel free to reach out at: <adam@adamscript.com>.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Acknowledgement
+Shoutout to [mattboldt](https://github.com/mattboldt) for the awesome [typed.js](https://github.com/mattboldt/typed.js) library.
