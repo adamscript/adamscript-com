@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import Chip from "./Chip";
 import Typography from "./Typography";
+import { Container } from ".";
 
 import Image from "next/image";
 
@@ -59,6 +60,10 @@ const StyledMediaContainer = styled.div`
     left: 0;
 `;
 
+const StyledImage = styled(Image)`
+    border-radius: 12px;
+`
+
 export default function Card(props){
     return(
         <a href={props.href}>
@@ -75,7 +80,7 @@ export default function Card(props){
                     </Typography>
                 </StyledContentContainer>
                 <StyledMediaContainer>
-                    <Image layout="fill" src={props.src} alt={`Screenshot of ${props.children[0]}`} priority />
+                    <StyledImage layout="fill" src={props.src} alt={`Screenshot of ${props.children[0]}`} priority />
                 </StyledMediaContainer>
             </StyledCardContainer>
         </a>

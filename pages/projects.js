@@ -3,6 +3,11 @@ import Image from 'next/image'
 import { Button, Card, Chip, Container, Grid, Icon, Layout, LinkButton, Section, Typography } from '../components'
 
 import TomatetoIllustration from '../public/images/projects/tomateto-illustration.png'
+import adamscriptScreenshot from '../public/images/projects/adamscript-com_screenshot_square.png'
+import autoriggerScreenshot from '../public/images/projects/autorigger_square_screenshot.png'
+import libraryScreenshot from '../public/images/projects/library_screenshot_square.png'
+import ojekleagueScreenshot from '../public/images/projects/ojekleague_screenshot_square.png'
+import sheepofflineScreenshot from '../public/images/projects/sheepoffline_screenshot_square.png'
 
 import TypescriptIcon from '../public/icons/logos/typescript-logo.svg'
 import ReactIcon from '../public/icons/logos/react-logo.svg'
@@ -103,44 +108,59 @@ export default function Projects() {
           </Container>
           <Container padding="120px 0" mdDown="padding: 30px;" direction="row">
             <Grid gap={30} size={360}>
-              <Card href="1" src={TomatetoIllustration}>
-                <p>Ojek League</p>
-                <p>A small Rocket League-like game built with Unity game engine</p>
+              <Card href="https://github.com/adamscript/adamscript-com" src={adamscriptScreenshot}>
+                <p>adamscript-com</p>
+                <p>First iteration of my personal website built with Next.js and hosted with Vercel.</p>
                 <div>
-                  <Chip>Unity</Chip>
-                  <Chip>C#</Chip>
+                  <Container direction="row" spacing={6} wrap>
+                    <Chip>Javascript</Chip>
+                    <Chip>React</Chip>
+                    <Chip>Next.js</Chip>
+                    <Chip>styled-components</Chip>
+                  </Container>
                 </div>
               </Card>
-              <Card href="2" src={TomatetoIllustration}>
-                <p>Ojek League</p>
-                <p>A small Rocket League-like game built with Unity game engine</p>
+              <Card href="https://github.com/adamscript/Auto-Rigger" src={autoriggerScreenshot}>
+                <p>Auto Rigging Toolkit for Autodesk Maya</p>
+                <p>This tool will help you build a 3D character rig without building it yourself from scratch. It will save you hours if not days of rigging work.</p>
                 <div>
-                  <Chip>Unity</Chip>
-                  <Chip>C#</Chip>
+                  <Container direction="row" spacing={6} wrap>
+                    <Chip>Python</Chip>
+                    <Chip>PySide</Chip>
+                    <Chip>Autodesk Maya</Chip>
+                  </Container>
                 </div>
               </Card>
-              <Card href="3" src={TomatetoIllustration}>
-                <p>Ojek League</p>
-                <p>A small Rocket League-like game built with Unity game engine</p>
+              <Card href="https://github.com/adamscript/library" src={libraryScreenshot}>
+                <p>Library</p>
+                <p>A web app to keep you on track of books that you read.</p>
                 <div>
-                  <Chip>Unity</Chip>
-                  <Chip>C#</Chip>
+                  <Container direction="row" spacing={6} wrap>
+                    <Chip>Javascript</Chip>
+                    <Chip>HTML</Chip>
+                    <Chip>CSS</Chip>
+                    <Chip>Google Books API</Chip>
+                  </Container>
                 </div>
               </Card>
-              <Card href="3" src={TomatetoIllustration}>
+              <Card href="4" src={ojekleagueScreenshot}>
                 <p>Ojek League</p>
-                <p>A small Rocket League-like game built with Unity game engine</p>
+                <p>Imagine a soccer game, but with taxi bikes and a giant ball. Ojek League is a vehicular soccer game inspired by Rocket League and built with Unity game engine.</p>
                 <div>
-                  <Chip>Unity</Chip>
-                  <Chip>C#</Chip>
+                  <Container direction="row" spacing={6} wrap>
+                    <Chip>Unity</Chip>
+                    <Chip>C#</Chip>
+                  </Container>
                 </div>
               </Card>
-              <Card href="5" src={TomatetoIllustration}>
-                <p>Ojek League</p>
-                <p>A small Rocket League-like game built with Unity game engine</p>
+              <Card href="5" src={sheepofflineScreenshot}>
+                <p>Sheep Offline</p>
+                <p>A simple endless runner game inspired by Google Chrome Dinosaur Game and built with Unity game engine.</p>
                 <div>
-                  <Chip>Unity</Chip>
-                  <Chip>C#</Chip>
+                  <Container direction="row" spacing={6} wrap>
+                    <Chip>Unity</Chip>
+                    <Chip>C#</Chip>
+                  </Container>
                 </div>
               </Card>
             </Grid>
