@@ -1,6 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import styled from "styled-components";
-import Button from "./Button";
+import { Button } from "./Button";
 import { Container } from "./Layout";
 
 const StyledInput = styled.input`

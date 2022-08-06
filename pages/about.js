@@ -26,7 +26,7 @@ const SkillIcons = () => {
                 <Icon size={4} label="Typescript">
                     <TSIcon />
                 </Icon>
-                <Icon size={3} label="Java">
+                <Icon size={4} label="Java">
                     <JavaIcon />
                 </Icon>
                 <Icon size={4} label="Spring Boot">
@@ -47,7 +47,7 @@ const SkillIcons = () => {
                 <Icon size={4} label="Azure">
                     <AzureIcon />
                 </Icon>
-                <Icon size={3} label="Firebase">
+                <Icon size={4} label="Firebase">
                     <FirebaseIcon />
                 </Icon>
                 <Icon size={4} label="Github Actions">
@@ -73,7 +73,7 @@ export default function About() {
       <Layout>
         <Section>
           <div>
-            <Container padding="180px 0 60px 0" alignItems="center" mdDown="padding: 120px 30px 30px 30px">
+            <Container padding="180px 30px 60px" alignItems="center" mdDown="padding: 120px 30px 30px 30px">
                 <Container spacing={60} maxWidth="1020px" padding="0 30px 0 30px" mdDown="padding: 0;">
                     <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">About me</Typography>
                     <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
@@ -87,13 +87,12 @@ export default function About() {
                 </Container>
             </Container>
           </div>
-          <div>
-          </div>
+          <div></div>
         </Section>
         <Section>
             <div>
                 <Container alignItems="center" mdDown="padding: 0;">
-                    <Container padding="0 30px 60px 30px" width="100%" maxWidth="1020px" mdDown="padding: 30px;" spacing={60}>    
+                    <Container padding="0 30px 60px" width="100%" maxWidth="1020px" mdDown="padding: 30px;" spacing={60}>    
                         <Typography size="h2" weight="bold" color="secondary">Skills</Typography>
                         <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
                             Here are some languages, technologies, and tools that I used in my most recent projects:
@@ -122,6 +121,7 @@ export default function About() {
                                 <Chip>React</Chip>
                                 <Chip>Redux</Chip>
                                 <Chip>Next.js</Chip>
+                                <Chip>React Router</Chip>
                                 <Chip>Spring Boot</Chip>
                                 <Chip>Docker</Chip>
                                 <Chip>Azure</Chip>
@@ -139,6 +139,7 @@ export default function About() {
                                 <Chip>Git</Chip>
                                 <Chip>Github Actions</Chip>
                                 <Chip>Lombok</Chip>
+                                <Chip>Apache Maven</Chip>
                                 <Chip>JUnit</Chip>
                                 <Chip>Mockito</Chip>
                                 <Chip>Unity</Chip>
@@ -150,6 +151,7 @@ export default function About() {
                                 <Chip>CI/CD</Chip>
                                 <Chip>Test Driven Development (TDD)</Chip>
                                 <Chip>REST API</Chip>
+                                <Chip>Debugging</Chip>
                                 <Chip>NoSQL</Chip>
                                 <Chip>Google API (YouTube, Books)</Chip>
                             </Container>

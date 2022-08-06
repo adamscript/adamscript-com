@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Typed from 'typed.js'
 import styled from 'styled-components';
 
-import { Button, Chip, Container, Icon, Layout, Section, Typography } from '../components';
+import { LinkButton, Container, Layout, Section, Typography } from '../components';
 import { useEffect, useRef } from 'react'
 
 import selfPortrait from '../public/images/selfportrait.jpg'
@@ -74,7 +74,11 @@ export default function Home() {
               <WelcomeText />
             </Container>
           </div>
-          <div></div>
+          <div>
+            <Container alignItems="center" height="100vh" justifyContent="center" spacing={6}>
+              <Typography size="caption" color="grey" slab>{`<Home />`}</Typography>
+            </Container>
+          </div>
         </Section>
         <Section>
           <div>
@@ -102,17 +106,39 @@ export default function Home() {
               </Typography>
             </Container>
             <SkillIcons />
+            <Container width="100%" alignItems="center" padding="0 0 30px">
+              <LinkButton width="160px" href="/about" outlined>
+                Learn More
+              </LinkButton>
+            </Container>
+          </div>
+            <Container alignItems="center" padding="60px">
+              <Typography size="caption" color="grey" slab>{`<About />`}</Typography>
+            </Container>
+          <div />
+        </Section>
+        <Section>
+          <div>
             <Container width="100%" alignItems="center">
               <Container maxWidth="960px" padding="60px 30px" spacing={30}>
                 <Typography size="h4" weight="black" color="secondary" mdDown="font-size: 34px">Stuff I&apos;ve Built</Typography>
                 <FeaturedProject />
                 <Container width="100%" alignItems="center">
-                  <Button width="160px" outlined>
+                  <LinkButton width="160px" href="/projects" outlined>
                     Show All Projects
-                  </Button>
+                  </LinkButton>
                 </Container>
               </Container>
             </Container>
+          </div>
+          <div>
+            <Container alignItems="center" padding="60px">
+              <Typography size="caption" color="grey" slab>{`<Projects />`}</Typography>
+            </Container>
+          </div>
+        </Section>
+        <Section>
+          <div>
             <Container width="100%" alignItems="center" padding="60px 30px 160px" spacing={30}>
               <Typography size="h4" weight="black" color="secondary" mdDown="font-size: 34px">Get In Touch</Typography>
               <Container maxWidth="600px">
@@ -120,12 +146,16 @@ export default function Home() {
                   Glad you made it here. Hope you like what you saw. If you got an opportunity to talk about, something you&apos;d like to ask, or just want to talk about movies and video games, feel free to reach out!
                 </Typography>
               </Container>
-                <Button width="120px">
+                <LinkButton href="/contact" width="120px">
                   Say Hello
-                </Button>
+                </LinkButton>
             </Container>
           </div>
-          <div />
+          <div>
+            <Container alignItems="center" padding="60px">
+              <Typography size="caption" color="grey" slab>{`<Contact />`}</Typography>
+            </Container>
+          </div>
         </Section>
       </Layout>
     </div>

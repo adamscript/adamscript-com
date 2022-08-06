@@ -26,10 +26,13 @@ const StyledTypography = styled.p`
     color: ${(props) => 
         props.color === 'primary' ? props.theme.palette.primary :
         props.color === 'secondary' ? props.theme.palette.secondary : 
-        props.color === 'black' ? props.theme.palette.common.black : props.theme.palette.primary};
+        props.color === 'black' ? props.theme.palette.common.black : 
+        props.color === 'grey' ? props.theme.palette.common.grey : props.theme.palette.primary};
 
     text-transform: ${props => props.uppercase ? 'uppercase' : 'none'};
     text-align : ${props => props.textAlign ? props.textAlign : 'left'};
+
+    z-index: ${props => props.zIndex ? props.zIndex : 'auto'};
 
     @media (max-width: 900px){
         ${props => props.mdDown}

@@ -1,9 +1,18 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Button, Card, Chip, Container, Grid, Icon, Layout, Section, Typography } from '../components'
+import { Button, Card, Chip, Container, Grid, Icon, Layout, LinkButton, Section, Typography } from '../components'
 
-import TomatetoIllustration from '../public/images/tomateto-illustration.png'
+import TomatetoIllustration from '../public/images/projects/tomateto-illustration.png'
+
+import TypescriptIcon from '../public/icons/logos/typescript-logo.svg'
 import ReactIcon from '../public/icons/logos/react-logo.svg'
+import ReduxIcon from '../public/icons/logos/redux-logo.svg'
+import FirebaseIcon from '../public/icons/logos/firebase-logo.svg'
+import JavaIcon from '../public/icons/logos/java-logo.svg'
+import SpringIcon from '../public/icons/logos/spring-logo.svg'
+import DockerIcon from '../public/icons/logos/docker-logo.svg'
+import AzureAppServiceIcon from '../public/icons/logos/azureappservice-logo.svg'
+import AzurePostgreSQLIcon from '../public/icons/logos/azuresql-logo.svg'
 
 const FeaturedProject = () => {
   return(
@@ -13,32 +22,56 @@ const FeaturedProject = () => {
           <Typography size="caption" color="secondary" weight="bold" slab>Featured Project</Typography>
           <Typography size="h4" weight="black">Tomateto</Typography>
         </Container>
-        <Typography size="h6" weight="medium">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        <Typography>
+          Tomateto is a full-stack social media web application. It consists of two main parts: a React app and a REST API (with a database).
+          <br /><br />
+          <ul>
+            <li>
+            Tomateto React
+            <br /><br />
+            A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.
+            </li>
+            <br /><br />
+            <li>
+            Tomateto API
+            <br /><br />
+            A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.
+            </li>
+          </ul>
         </Typography>
-        <Container direction="row" spacing={18}>
-          <Icon size={2} label="React" hideLabel>
-            <ReactIcon />
+
+        <Container direction="row" spacing={18} wrap>
+          <Icon size={2} label="Typescript" hideLabel>
+            <TypescriptIcon />
           </Icon>
           <Icon size={2} label="React" hideLabel>
             <ReactIcon />
           </Icon>
-          <Icon size={2} label="React" hideLabel>
-            <ReactIcon />
+          <Icon size={2} label="Redux" hideLabel>
+            <ReduxIcon />
           </Icon>
-          <Icon size={2} label="React" hideLabel>
-            <ReactIcon />
+          <Icon size={2} label="Firebase" hideLabel>
+            <FirebaseIcon />
           </Icon>
-          <Icon size={2} label="React" hideLabel>
-            <ReactIcon />
+          <Icon size={2} label="Java" hideLabel>
+            <JavaIcon />
           </Icon>
-          <Icon size={2} label="React" hideLabel>
-            <ReactIcon />
+          <Icon size={2} label="Spring Boot" hideLabel>
+            <SpringIcon />
+          </Icon>
+          <Icon size={2} label="Docker" hideLabel>
+            <DockerIcon />
+          </Icon>
+          <Icon size={2} label="Azure App Service" hideLabel>
+            <AzureAppServiceIcon />
+          </Icon>
+          <Icon size={2} label="Azure Database for PostgreSQL" hideLabel>
+            <AzurePostgreSQLIcon />
           </Icon>
         </Container>
         <Container direction="row" width="100%" spacing={32}>
-          <Button width="100%">Visit Tomateto</Button>
-          <Button width="100%">View on Github</Button>
+          <LinkButton href="https://tomateto.com" width="100%">Visit Tomateto</LinkButton>
+          <LinkButton href="https://github.com/adamscript/tomateto-react" width="100%">View on Github</LinkButton>
         </Container>
       </Container>
       <Container>
@@ -62,13 +95,13 @@ export default function Projects() {
           <div>
           <Container padding="120px 0 0 0" alignItems="center" width="100%" mdDown="padding: 30px; gap: 30px;">
             <Container spacing={60} maxWidth="1020px" padding="0 30px 0 30px" mdDown="padding: 0;">
-              <Container width="100%" padding="60px 0 0 0" mdDown="padding: 30px 0 0 0;">
+              <Container width="100%" padding="60px 0 0 0" mdDown="padding: 80px 0 0 0;">
                 <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">Projects</Typography>
               </Container>
               <FeaturedProject />
             </Container>
           </Container>
-          <Container direction="row" padding="120px 0 120px 0" mdDown="padding: 30px;">  
+          <Container padding="120px 0" mdDown="padding: 30px;" direction="row">
             <Grid gap={30} size={360}>
               <Card href="1" src={TomatetoIllustration}>
                 <p>Ojek League</p>

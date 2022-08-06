@@ -35,6 +35,7 @@ const StyledContentContainer = styled.div`
     cursor: pointer;
 
     background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+    transition: 0.3s;
 
     &:hover{
         background-color: #00000060;

@@ -8,7 +8,12 @@ const theme = {
     background: "#2C2C2C",
     common: {
       black: "#000000",
+      grey: "#757575",
       white: "#FFFFFF"
+    },
+    hover: {
+      secondary: "rgba(211, 170, 95, 1)",
+      background: "rgba(240, 203, 132, 0.1)"
     }
   }
 }

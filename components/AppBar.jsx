@@ -1,11 +1,14 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import Typography from "./Typography";
-import Button from "./Button";
+import { IconButton, LinkButton } from "./Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { forwardRef, useEffect } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import MenuIcon from "../public/icons/menu-icon.svg";
+import CloseIcon from "../public/icons/close-icon.svg";
 import Icon from "./Icon";
+import { Container } from "./Layout";
+import { SocialsHoriz } from ".";
 
 const StyledAppBar = styled.div`
   position: fixed;
@@ -62,9 +65,14 @@ const AppBarNavigation = styled.div`
 
 const StyledLink = styled.a`
   color: ${props => props.active ? props.theme.palette.secondary : props.theme.palette.primary};
+  transition: 0.1s;
   
   font-weight: ${props => props.active ? 700 : 400};
   font-family: 'Roboto', sans-serif;
+
+  &:hover{
+    color: ${props => props.theme.palette.secondary};
+}
 `;
 
 const Navigation = forwardRef((props, ref) => {
@@ -85,7 +93,36 @@ const Navigation = forwardRef((props, ref) => {
 })
 Navigation.displayName = "Navigation";
 
+const StyledMenu = styled.div`
+    display: ${props => props.open ? 'block' : 'none'};
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: ${props => props.theme.palette.background};
+
+    z-index: 1;
+
+    @media (min-width: 900px){
+      display: none;
+      
+      ${props => props.mdUp}
+    }
+`
+
+const rotateIn = keyframes`
+    0% { opacity: 1; transform: rotate(-90deg); }
+    100% { opacity: 1; transform: rotate(0deg); }
+ `
+
 export default function AppBar(){
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [transitionDuration, setTransitionDuration] = useState(0);
 
     useEffect(() => {
       const debounce = (fn) => {
@@ -121,11 +158,12 @@ export default function AppBar(){
     }, [])
 
     return(
+      <>
         <StyledAppBar>
           <AppBarContainer>
             <Link href="/">
               <a>
-                <Typography size="h5" weight="black" uppercase color="secondary">Adam Darmawan</Typography>
+                <Typography size="h5" weight="black" uppercase color="secondary" mdDown="font-size: 20px;">Adam Darmawan</Typography>
               </a>
             </Link>
             <AppBarNavigation mdDown="display: none;">
@@ -141,14 +179,42 @@ export default function AppBar(){
               <Link href="/contact" passHref>
                 <Navigation>Contact</Navigation>
               </Link>
-              <Button width="98px" onClick={() => {console.log("resume clicked")}}>Resume</Button>
+              <LinkButton width="98px" href="#" external>Resume</LinkButton>
             </AppBarNavigation>
             <AppBarNavigation mdUp="display: none;" mdDown="flex: 1; justify-content: end;">
-              <Icon color="secondary" size={3}>
-                <MenuIcon />
-              </Icon>
+              <IconButton onClick={() => { menuOpen ? setMenuOpen(false) : setMenuOpen(true); setTransitionDuration(0.2); }}>
+                  {
+                    !menuOpen ?
+                    <Icon color="secondary" size={2.5} animation={rotateIn} animationDuration={transitionDuration} open={menuOpen}><MenuIcon /></Icon> :
+                    <Icon color="secondary" size={2.5} animation={rotateIn} animationDuration={transitionDuration} open={menuOpen}><CloseIcon /></Icon>
+                  }
+              </IconButton>
             </AppBarNavigation>
           </AppBarContainer>
         </StyledAppBar>
+
+        <StyledMenu open={menuOpen}>
+          <Container width="100%" height="100%" alignItems="center" justifyContent="center">
+            <Container alignItems="center" justifyContent="center" spacing={45} flex="0">
+                <Link href="/" passHref>
+                    <Navigation>Home</Navigation>
+                </Link>
+                <Link href="/about" passHref>
+                    <Navigation>About</Navigation>
+                </Link>
+                <Link href="/projects" passHref>
+                    <Navigation>Projects</Navigation>
+                </Link>
+                <Link href="/contact" passHref>
+                    <Navigation>Contact</Navigation>
+                </Link>
+                <LinkButton width="98px" href="#" external>Resume</LinkButton>
+            </Container>
+            <Container position="fixed" bottom="30px">
+              <SocialsHoriz />
+            </Container>
+          </Container>
+        </StyledMenu>
+      </>
     )
 }

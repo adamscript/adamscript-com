@@ -7,12 +7,18 @@ const StyledIcon = styled.div`
 
     width: ${ props => props.size ? props.size : '1' }em;
     height: ${ props => props.size ? props.size : '1' }em;
+
+    animation-name: ${props => props.animation};
+    animation-duration: ${props => props.animationDuration ? props.animationDuration : 0}s;
+
+    z-index: ${props => props.zIndex ? props.zIndex : 'auto'};
 `;
 
-const StyledIconButton = styled.button`
+const StyledIconLink = styled.a`
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: 0.2s;
 
     &:hover {
         filter: brightness(80%);
@@ -26,19 +32,22 @@ const StyledIconWrapper = styled.div`
     justify-content: space-between;
     height: 100%;
     gap: ${props => props.hideLabel || !props.label ? '0' : '24px'};
+
+    ${props => props.style}
 `;
 
 export default function Icon(props){
     return(
-        <StyledIconWrapper size={props.size} hideLabel={props.hideLabel} label={props.label}>
+        <StyledIconWrapper size={props.size} hideLabel={props.hideLabel} label={props.label} style={props.style}>
             {
-                props.onClick ?
-                <StyledIconButton onClick={props.onClick}>
+                props.href ?
+                <StyledIconLink href={props.href}>
                     <StyledIcon title={props.label} size={props.size} noFill={props.noFill} color={props.color}>
                         {props.children}
                     </StyledIcon>
-                </StyledIconButton> :
-                <StyledIcon title={props.label} size={props.size} noFill={props.noFill} color={props.color}>
+                </StyledIconLink> :
+
+                <StyledIcon title={props.label} size={props.size} noFill={props.noFill} color={props.color} animation={props.animation} animationDuration={props.animationDuration} key={props.open}>
                     {props.children}
                 </StyledIcon>
             }

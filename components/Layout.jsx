@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import styled from "styled-components";
+import { Menu } from '.';
 import AppBar from "./AppBar";
+import { SocialsVert } from "./Socials";
 
 const StyledLayout = styled.div`
   display: flex;
@@ -61,6 +63,12 @@ const StyledContainer = styled.div`
   padding: ${props => props.padding ? props.padding : '0'};
   margin: ${props => props.margin ? props.margin : '0'};
 
+  position: ${props => props.position ? props.position : 'static'};
+  top: ${props => props.top ? props.top : 'auto'};
+  bottom: ${props => props.bottom ? props.bottom : 'auto'};
+  left: ${props => props.left ? props.left : 'auto'};
+  right: ${props => props.right ? props.right : 'auto'};
+
   /*background-color: #00000010;*/
 
   @media (max-width: 900px){
@@ -72,6 +80,7 @@ const Layout = (props) => {
     return(
         <StyledLayout>
             <AppBar />
+            <SocialsVert />
             {props.children}
         </StyledLayout>
     )
@@ -89,7 +98,7 @@ const Section = (props) => {
 
 const Container = (props) => {
     return(
-        <StyledContainer width={props.width} height={props.height} maxWidth={props.maxWidth} spacing={props.spacing} flex={props.flex} alignItems={props.alignItems} justifyContent={props.justifyContent} direction={props.direction} padding={props.padding} margin={props.margin} mdDown={props.mdDown} wrap={props.wrap}>{props.children}</StyledContainer> 
+        <StyledContainer width={props.width} height={props.height} maxWidth={props.maxWidth} spacing={props.spacing} flex={props.flex} alignItems={props.alignItems} justifyContent={props.justifyContent} direction={props.direction} padding={props.padding} margin={props.margin} mdDown={props.mdDown} wrap={props.wrap} position={props.position} top={props.top} bottom={props.bottom} left={props.left} right={props.right}>{props.children}</StyledContainer> 
     )
 }
 
