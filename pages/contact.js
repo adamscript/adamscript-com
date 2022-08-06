@@ -19,7 +19,13 @@ export default function Contact() {
                         <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">Contact me</Typography>
                     </Container>
                     <Container spacing={60}>
-                        <Typography size="h6" weight="medium">Hey contact meee :)</Typography>
+                        <Typography size="h6" weight="medium">
+                          Hey, it’s nice to see you here. I’m currently interested in full time opportunities. Feel free to use the form below to get in touch, whether you got an opportunity to talk about, something you'd like to ask, or just want to talk about the latest movies. Looking forward to hearing from you!
+                          <br /><br />
+                          Alternatively, my inbox is always open at adam@adamscript.com.
+                          <br /><br />
+                          You can also find me on LinkedIn.
+                        </Typography>
                         <ContactForm />
                     </Container>
                 </Container>
