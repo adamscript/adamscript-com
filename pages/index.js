@@ -112,7 +112,7 @@ export default function Home() {
               </LinkButton>
             </Container>
           </div>
-            <Container alignItems="center" padding="60px">
+            <Container alignItems="center" padding="60px 0">
               <Typography size="caption" color="grey" slab>{`<About />`}</Typography>
             </Container>
           <div />
@@ -120,7 +120,7 @@ export default function Home() {
         <Section>
           <div>
             <Container width="100%" alignItems="center">
-              <Container maxWidth="960px" padding="60px 30px" spacing={30}>
+              <Container maxWidth="1020px" padding="60px 30px" spacing={30}>
                 <Typography size="h4" weight="black" color="secondary" mdDown="font-size: 34px">Stuff I&apos;ve Built</Typography>
                 <FeaturedProject />
                 <Container width="100%" alignItems="center">
@@ -132,7 +132,7 @@ export default function Home() {
             </Container>
           </div>
           <div>
-            <Container alignItems="center" padding="60px">
+            <Container alignItems="center" padding="60px 0">
               <Typography size="caption" color="grey" slab>{`<Projects />`}</Typography>
             </Container>
           </div>
@@ -152,7 +152,7 @@ export default function Home() {
             </Container>
           </div>
           <div>
-            <Container alignItems="center" padding="60px">
+            <Container alignItems="center" padding="60px 0">
               <Typography size="caption" color="grey" slab>{`<Contact />`}</Typography>
             </Container>
           </div>

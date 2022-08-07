@@ -17,7 +17,7 @@ import JavaIcon from '../public/icons/logos/java-logo.svg'
 import SpringIcon from '../public/icons/logos/spring-logo.svg'
 import DockerIcon from '../public/icons/logos/docker-logo.svg'
 import AzureAppServiceIcon from '../public/icons/logos/azureappservice-logo.svg'
-import AzurePostgreSQLIcon from '../public/icons/logos/azuresql-logo.svg'
+import AzurePostgreSQLIcon from '../public/icons/logos/azuredatabase-logo.svg'
 
 const FeaturedProject = () => {
   return(
@@ -32,15 +32,15 @@ const FeaturedProject = () => {
         </Typography>
         <ul>
           <li>
-          Tomateto React
+          <Typography>Tomateto React</Typography>
           <br /><br />
-          A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.
+          <Typography>A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.</Typography>
           </li>
           <br /><br />
           <li>
-          Tomateto API
+          <Typography>Tomateto API</Typography>
           <br /><br />
-          A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.
+          <Typography>A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.</Typography>
           </li>
         </ul>
 

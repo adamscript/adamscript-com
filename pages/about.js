@@ -12,7 +12,7 @@ import DockerIcon from '../public/icons/logos/docker-logo.svg'
 import AzureIcon from '../public/icons/logos/azure-logo.svg'
 import FirebaseIcon from '../public/icons/logos/firebase-logo.svg'
 import GHActionsIcon from '../public/icons/logos/githubactions-logo.svg'
-import GitIcon from '../public/icons/logos/github-logo.svg'
+import GitIcon from '../public/icons/logos/git-logo.svg'
 
 const SkillIcons = () => {
     return(
