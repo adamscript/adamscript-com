@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router';
 import styled from "styled-components";
-import { Menu } from '.';
+import { Footer } from ".";
 import AppBar from "./AppBar";
 import { SocialsVert } from "./Socials";
 
@@ -45,7 +44,7 @@ const RightMargin = styled.div`
 
 const StyledContainer = styled.div`
   display: flex;
-  flex-wrap: ${props => props.wrap ? 'wrap' : 'nowrap'};
+  flex-wrap: ${props => props.$wrap ? 'wrap' : 'nowrap'};
   flex: ${props => props.flex ? props.flex : '1'};
 
   width: ${props => props.width ? props.width : 'auto'};
@@ -69,10 +68,16 @@ const StyledContainer = styled.div`
   left: ${props => props.left ? props.left : 'auto'};
   right: ${props => props.right ? props.right : 'auto'};
 
+  z-index: ${props => props.zIndex ? props.zIndex : 'auto'};
+
   /*background-color: #00000010;*/
 
   @media (max-width: 900px){
     ${props => props.mdDown}
+  }
+
+  @media (min-width: 1350px){
+    ${props => props.lgUp}
   }
 `;
 
@@ -82,6 +87,7 @@ const Layout = (props) => {
             <AppBar />
             <SocialsVert />
             {props.children}
+            <Footer />
         </StyledLayout>
     )
 }
@@ -98,7 +104,7 @@ const Section = (props) => {
 
 const Container = (props) => {
     return(
-        <StyledContainer width={props.width} height={props.height} maxWidth={props.maxWidth} spacing={props.spacing} flex={props.flex} alignItems={props.alignItems} justifyContent={props.justifyContent} direction={props.direction} padding={props.padding} margin={props.margin} mdDown={props.mdDown} wrap={props.wrap} position={props.position} top={props.top} bottom={props.bottom} left={props.left} right={props.right}>{props.children}</StyledContainer> 
+        <StyledContainer width={props.width} height={props.height} maxWidth={props.maxWidth} spacing={props.spacing} flex={props.flex} alignItems={props.alignItems} justifyContent={props.justifyContent} direction={props.direction} padding={props.padding} margin={props.margin} mdDown={props.mdDown} lgUp={props.lgUp} $wrap={props.wrap} position={props.position} top={props.top} bottom={props.bottom} left={props.left} right={props.right} zIndex={props.zIndex}>{props.children}</StyledContainer> 
     )
 }
 

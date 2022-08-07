@@ -38,10 +38,10 @@ const SocialsVert = () => {
 const SocialsHoriz = () => {
     return(
         <Container direction="row" spacing={18} justifyContent="center" flex="0">
-            <Icon size={2} label="Tomateto" href="https://tomateto.com/adamscript" hideLabel><TomatetoIcon /></Icon>
-            <Icon size={2} label="GitHub" href="https://github.com/adamscript" hideLabel><GitHubIcon /></Icon>
-            <Icon size={2} label="LinkedIn" href="https://www.linkedin.com/in/adamscript" hideLabel><LinkedinIcon /></Icon>
-            <Icon size={2} label="Email" href="mailto:adam@adamscript.com" hideLabel><EmailIcon /></Icon>
+            <Icon size={1.5} label="Tomateto" href="https://tomateto.com/adamscript" hideLabel><TomatetoIcon /></Icon>
+            <Icon size={1.5} label="GitHub" href="https://github.com/adamscript" hideLabel><GitHubIcon /></Icon>
+            <Icon size={1.5} label="LinkedIn" href="https://www.linkedin.com/in/adamscript" hideLabel><LinkedinIcon /></Icon>
+            <Icon size={1.5} label="Email" href="mailto:adam@adamscript.com" hideLabel><EmailIcon /></Icon>
         </Container>
     )
 }

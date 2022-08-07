@@ -27,7 +27,7 @@ const StyledAppBar = styled.div`
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  z-index: 2;
+  z-index: 3;
 `;
 
 const AppBarContainer = styled.div`
@@ -106,7 +106,7 @@ const StyledMenu = styled.div`
 
     background-color: ${props => props.theme.palette.background};
 
-    z-index: 1;
+    z-index: 2;
 
     @media (min-width: 900px){
       display: none;

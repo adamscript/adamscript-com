@@ -124,7 +124,7 @@ export default function About() {
                                 <Chip>Docker</Chip>
                                 <Chip>Azure</Chip>
                                 <Chip>Firebase</Chip>
-                                <Chip></Chip>
+                                <Chip>Vercel</Chip>
                                 <Chip>Node.js</Chip>
                                 <Chip>Express.js</Chip>
                                 <Chip>PostgreSQL</Chip>
