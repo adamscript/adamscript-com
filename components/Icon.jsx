@@ -30,7 +30,6 @@ const StyledIconWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
     gap: ${props => props.hideLabel || !props.label ? '0' : '24px'};
 
     ${props => props.style}

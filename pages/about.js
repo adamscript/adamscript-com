@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styled from 'styled-components'
 import { Chip, Container, Grid, Icon, Layout, Section, Typography } from '../components'
 
 import JSIcon from '../public/icons/logos/javascript-logo.svg'
@@ -104,7 +102,7 @@ export default function About() {
                     <Container padding="0 30px 120px 30px" width="100%" maxWidth="1020px" spacing={60} mdDown="padding: 60px 30px 60px 30px;">
                         <Container spacing={24}>
                             <Typography size="h5" weight="medium">Languages</Typography>
-                            <Container direction="row" spacing={6} wrap="wrap">
+                            <Container direction="row" spacing={6} wrap>
                                 <Chip>Javascript (ES6)</Chip>
                                 <Chip>Typescript</Chip>
                                 <Chip>Java</Chip>
@@ -117,7 +115,7 @@ export default function About() {
                         </Container>
                         <Container spacing={24}>
                             <Typography size="h5" weight="medium">Technologies</Typography>
-                            <Container direction="row" spacing={6} wrap="wrap">
+                            <Container direction="row" spacing={6} wrap>
                                 <Chip>React</Chip>
                                 <Chip>Redux</Chip>
                                 <Chip>Next.js</Chip>
@@ -126,7 +124,7 @@ export default function About() {
                                 <Chip>Docker</Chip>
                                 <Chip>Azure</Chip>
                                 <Chip>Firebase</Chip>
-                                <Chip>Vercel</Chip>
+                                <Chip></Chip>
                                 <Chip>Node.js</Chip>
                                 <Chip>Express.js</Chip>
                                 <Chip>PostgreSQL</Chip>
@@ -135,7 +133,7 @@ export default function About() {
                         </Container>
                         <Container spacing={24}>
                             <Typography size="h5" weight="medium">Tools & Methodologies</Typography>
-                            <Container direction="row" spacing={6} wrap="wrap">
+                            <Container direction="row" spacing={6} wrap>
                                 <Chip>Git</Chip>
                                 <Chip>Github Actions</Chip>
                                 <Chip>Lombok</Chip>

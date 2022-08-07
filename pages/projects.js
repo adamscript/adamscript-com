@@ -29,21 +29,20 @@ const FeaturedProject = () => {
         </Container>
         <Typography>
           Tomateto is a full-stack social media web application. It consists of two main parts: a React app and a REST API (with a database).
-          <br /><br />
-          <ul>
-            <li>
-            Tomateto React
-            <br /><br />
-            A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.
-            </li>
-            <br /><br />
-            <li>
-            Tomateto API
-            <br /><br />
-            A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.
-            </li>
-          </ul>
         </Typography>
+        <ul>
+          <li>
+          Tomateto React
+          <br /><br />
+          A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.
+          </li>
+          <br /><br />
+          <li>
+          Tomateto API
+          <br /><br />
+          A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.
+          </li>
+        </ul>
 
         <Container direction="row" spacing={18} wrap>
           <Icon size={2} label="Typescript" hideLabel>

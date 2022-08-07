@@ -1,4 +1,6 @@
+import { useEffect, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import { Loading } from '../components';
 import '../styles/globals.css'
 
 const theme = {
@@ -19,10 +21,20 @@ const theme = {
 }
 
 function MyApp({ Component, pageProps }) {
+  const [isLoaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, [])
+
   return(
+    isLoaded ?
     <ThemeProvider theme={theme}>
       <Component {...pageProps} />
-    </ThemeProvider>
+    </ThemeProvider> :
+    <ThemeProvider theme={theme}>
+      <Loading />
+    </ThemeProvider> 
   ) 
 }
 

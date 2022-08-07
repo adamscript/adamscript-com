@@ -20,7 +20,7 @@ export default function Contact() {
                     </Container>
                     <Container spacing={60}>
                         <Typography size="h6" weight="medium">
-                          Hey, it’s nice to see you here. I’m currently interested in full time opportunities. Feel free to use the form below to get in touch, whether you got an opportunity to talk about, something you'd like to ask, or just want to talk about the latest movies. Looking forward to hearing from you!
+                          Hey, it&apos;s nice to see you here. I&apos;m currently interested in full time opportunities. Feel free to use the form below to get in touch, whether you got an opportunity to talk about, something you&apos;d like to ask, or just want to talk about the latest movies. Looking forward to hearing from you!
                           <br /><br />
                           Alternatively, my inbox is always open at adam@adamscript.com.
                           <br /><br />
