@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import styled from "styled-components";
-import Typography from "./Typography";
+import { Typography } from "./Typography";
 import { Container } from '../components'
 
 const StyledButton = styled.button`

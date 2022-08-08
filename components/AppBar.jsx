@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Typography from "./Typography";
+import { Typography } from "./Typography";
 import { IconButton, LinkButton } from "./Button";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -27,7 +27,7 @@ const StyledAppBar = styled.div`
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  z-index: 3;
+  z-index: 4;
 `;
 
 const AppBarContainer = styled.div`
@@ -72,7 +72,7 @@ const StyledLink = styled.a`
 
   &:hover{
     color: ${props => props.theme.palette.secondary};
-}
+  }
 `;
 
 const Navigation = forwardRef((props, ref) => {
@@ -106,7 +106,7 @@ const StyledMenu = styled.div`
 
     background-color: ${props => props.theme.palette.background};
 
-    z-index: 2;
+    z-index: 3;
 
     @media (min-width: 900px){
       display: none;

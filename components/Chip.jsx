@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Typography from "./Typography";
+import { Typography } from "./Typography";
 
 const StyledChip = styled.div`
     display: inline-flex;

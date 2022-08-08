@@ -48,7 +48,7 @@ const SkillIcons = () => {
                 <Icon size={4} label="Firebase">
                     <FirebaseIcon />
                 </Icon>
-                <Icon size={4} label="Github Actions">
+                <Icon size={4} label="GitHub Actions">
                     <GHActionsIcon />
                 </Icon>
                 <Icon size={4} label="Git">
@@ -74,12 +74,11 @@ export default function About() {
             <Container padding="180px 30px 60px" alignItems="center" mdDown="padding: 120px 30px 30px 30px">
                 <Container spacing={60} maxWidth="1020px" padding="0 30px 0 30px" mdDown="padding: 0;">
                     <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">About me</Typography>
-                    <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
+                    <Typography size="h6" weight="medium">
                         I graduated with BA in Information Technology from University of Amikom Yogyakarta in 2021.<br /><br />
                         I&apos;ve been curious about all things programming but that is not until 2017 when I learned programming for the first time that I finally figured out that this is what I want to do professionally.<br /><br />
                         My first programming language is Python, and ever since then I&apos;ve learned a lot and along my journey I&apos;ve created many apps with various technologies such as full stack web apps, automation script for 3d animation, and video games. I&apos;m pretty much comfortable with a variety of technologies.<br /><br />
                         Beside programming, I have a few hobbies which include video & photo editing, graphic design, 3D Modeling & Animation, I dabbles around music and filmmaking, and trying my best to get better in competitive online games.<br /><br />
-                        My current interest in technology includes web development, VR/AR, deep learning, and cloud computing. <br /><br />
                         If you are looking for a software engineer who never stops learning and is eager to solve some problems to add to your team, feel free to reach out and say hello! I&apos;m also down to talk about movies, music, video games, and the latest technologies.<br /><br />
                     </Typography>
                 </Container>
@@ -92,7 +91,7 @@ export default function About() {
                 <Container alignItems="center" mdDown="padding: 0;">
                     <Container padding="0 30px 60px" width="100%" maxWidth="1020px" mdDown="padding: 30px;" spacing={60}>    
                         <Typography size="h2" weight="bold" color="secondary">Skills</Typography>
-                        <Typography size="h5" weight="medium" mdDown="font-size: 20px;">
+                        <Typography size="h6" weight="medium" mdDown="font-size: 20px;">
                             Here are some languages, technologies, and tools that I used in my most recent projects:
                         </Typography>
                     </Container>
@@ -135,7 +134,7 @@ export default function About() {
                             <Typography size="h5" weight="medium">Tools & Methodologies</Typography>
                             <Container direction="row" spacing={6} wrap>
                                 <Chip>Git</Chip>
-                                <Chip>Github Actions</Chip>
+                                <Chip>GitHub Actions</Chip>
                                 <Chip>Lombok</Chip>
                                 <Chip>Apache Maven</Chip>
                                 <Chip>JUnit</Chip>

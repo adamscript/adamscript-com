@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Button, Card, Chip, Container, Grid, Icon, Layout, LinkButton, Section, Typography } from '../components'
+import { Card, Chip, Container, Grid, Icon, Layout, LinkButton, Section, Typography } from '../components'
 
 import TomatetoIllustration from '../public/images/projects/tomateto-illustration.png'
 import adamscriptScreenshot from '../public/images/projects/adamscript-com_screenshot_square.png'
@@ -27,20 +27,20 @@ const FeaturedProject = () => {
           <Typography size="caption" color="secondary" weight="bold" slab>Featured Project</Typography>
           <Typography size="h4" weight="black">Tomateto</Typography>
         </Container>
-        <Typography>
+        <Typography weight="medium">
           Tomateto is a full-stack social media web application. It consists of two main parts: a React app and a REST API (with a database).
         </Typography>
         <ul>
           <li>
-          <Typography>Tomateto React</Typography>
+          <Typography weight="medium">Tomateto React</Typography>
           <br /><br />
-          <Typography>A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.</Typography>
+          <Typography weight="medium">A social media web application powered by React and provides main functionalities such as creating new posts, liking a post, following a user, etc. With this web app you can interact and show data requested from Tomateto API through user interface.</Typography>
           </li>
           <br /><br />
           <li>
-          <Typography>Tomateto API</Typography>
+          <Typography weight="medium">Tomateto API</Typography>
           <br /><br />
-          <Typography>A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.</Typography>
+          <Typography weight="medium">A social media REST API written in Java and powered by Spring Boot. It provides endpoints such as creating a new post, liking a post, following a user, etc. This API acts as a bridge between the Tomateto React web app and the PostgreSQL database. Hosted with Azure App Service and run within a Docker container.</Typography>
           </li>
         </ul>
 
@@ -73,14 +73,17 @@ const FeaturedProject = () => {
             <AzurePostgreSQLIcon />
           </Icon>
         </Container>
+
         <Container direction="row" width="100%" spacing={32}>
           <LinkButton href="https://tomateto.com" width="100%">Visit Tomateto</LinkButton>
           <LinkButton href="https://github.com/adamscript/tomateto-react" width="100%">View on Github</LinkButton>
         </Container>
       </Container>
+
       <Container>
         <Image src={TomatetoIllustration} alt="Illustration of Tomateto" priority />
       </Container>
+
     </Container>
   )
 }

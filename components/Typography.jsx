@@ -39,8 +39,38 @@ const StyledTypography = styled.p`
     }
 `;
 
-export default function Typography(props){
+const StyledLink = styled.a`
+    color: ${props => props.theme.palette.secondary};
+
+    &:hover{
+        text-decoration: underline;
+    }
+`
+
+const StyledSpan = styled.span`
+    color: ${props => props.theme.palette.secondary};
+`
+
+const Typography = (props) => {
     return(
         <StyledTypography size={props.size} weight={props.weight} textAlign={props.textAlign} color={props.color} slab={props.slab} uppercase={props.uppercase} margin={props.margin} padding={props.padding} mdDown={props.mdDown}>{props.children}</StyledTypography>
     )
 }
+
+const LinkTypography = (props) => {
+    return(
+        <StyledLink href={props.href}>
+            {props.children}
+        </StyledLink>
+    )
+}
+
+const HighlightTypography = (props) => {
+    return(
+        <StyledSpan>
+            {props.children}
+        </StyledSpan>
+    )
+}
+
+export { Typography, LinkTypography, HighlightTypography }

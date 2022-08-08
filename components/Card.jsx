@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import Chip from "./Chip";
-import Typography from "./Typography";
+import { Typography } from "./Typography";
 import { Container } from ".";
 
 import Image from "next/image";

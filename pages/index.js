@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Typed from 'typed.js'
 import styled from 'styled-components';
 
-import { LinkButton, Container, Layout, Section, Typography } from '../components';
+import { LinkButton, Container, Layout, Section, Typography, HighlightTypography } from '../components';
 import { useEffect, useRef } from 'react'
 
 import selfPortrait from '../public/images/selfportrait.jpg'
@@ -87,10 +87,10 @@ export default function Home() {
                 <Typography size="h4" weight="black" color="secondary" mdDown="font-size: 34px">Who Am I?</Typography>
                 <Container direction="row" spacing={60} mdDown="flex-direction: column-reverse;">
                     <Container flex="auto" spacing={60} maxWidth="540px" mdDown="max-width: 100%;">
-                        <Typography size="h6" weight="medium" mdDown="font-size: 20px;">
+                        <Typography size="h6" weight="medium">
                             Hello again! I&apos;m mostly known as Aji but you can call me Adam, whichever you prefer really. <br /><br />
                             I enjoy learning new things, solving problems, and making stuff especially the ones that you can interact with.<br /><br />
-                            So far I&apos;ve built 2 video games, a script that I used to aid my 3D animation character creation, a few websites, and a social media web app. Through these projects I&apos;m able to learn about single page apps, responsive design, cloud, containers, REST API, Test Driven Development, CI/CD, and I strive to learn more.<br /><br />
+                            So far I&apos;ve built two <HighlightTypography>video games</HighlightTypography>, an <HighlightTypography>automation script</HighlightTypography> that I used to aid my 3D animation character creation, a few websites, and a <HighlightTypography>social media web app</HighlightTypography>. Through these projects I&apos;m able to learn about <HighlightTypography>single page apps, responsive design, cloud, containers, REST API, Test Driven Development, CI/CD</HighlightTypography>, and I strive to learn more.<br /><br />
                             My goal is to utilize the things I&apos;ve learned to help bring ideas to life.
                         </Typography>
                     </Container>
