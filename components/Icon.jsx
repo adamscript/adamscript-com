@@ -40,7 +40,7 @@ export default function Icon(props){
         <StyledIconWrapper size={props.size} hideLabel={props.hideLabel} label={props.label} style={props.style}>
             {
                 props.href ?
-                <StyledIconLink href={props.href} target="_blank">
+                <StyledIconLink href={props.href} target="_blank" rel="noopener noreferrer" >
                     <StyledIcon title={props.label} size={props.size} noFill={props.noFill} color={props.color}>
                         {props.children}
                     </StyledIcon>

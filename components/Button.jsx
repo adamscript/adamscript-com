@@ -74,7 +74,7 @@ const LinkButton = (props) => {
                 </Container>
             </StyledLinkButton>
         </Link> :
-        <StyledLinkButton href={props.href} target="_blank" width={props.width} height={props.height} outlined={props.outlined}>
+        <StyledLinkButton href={props.href} target="_blank" rel="noopener noreferrer"  width={props.width} height={props.height} outlined={props.outlined}>
             <Container alignItems="center" justifyContent="center" height="100%">
                 <Typography color={props.outlined ? 'secondary' : 'black'} weight='bold'>{props.children}</Typography>
             </Container>

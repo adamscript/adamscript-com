@@ -88,7 +88,7 @@ export default function Home() {
                 <Container direction="row" spacing={60} mdDown="flex-direction: column-reverse;">
                     <Container flex="auto" spacing={60} maxWidth="540px" mdDown="max-width: 100%;">
                         <Typography weight="medium">
-                            Hello again! I&apos;m mostly known as Aji but you can call me Adam, whichever you're most comfortable with. <br /><br />
+                            Hello again! I&apos;m mostly known as Aji but you can call me Adam, whichever you&apos;re most comfortable with. <br /><br />
                             I enjoy learning new things, solving problems, and building stuff, especially the ones that you can interact with.
                             So far I&apos;ve built two <HighlightTypography>video games</HighlightTypography>, an <HighlightTypography>automation script</HighlightTypography>, a few websites, and a <HighlightTypography>social media web app</HighlightTypography>. <br /><br />
                             I have knowledge in <HighlightTypography>single-page applications (SPA), cloud deployment, containers, REST API, test-driven development (TDD), and CI/CD</HighlightTypography>.<br /><br />

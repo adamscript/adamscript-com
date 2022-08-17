@@ -66,7 +66,7 @@ const StyledImage = styled(Image)`
 
 export default function Card(props){
     return(
-        <a href={props.href} target="_blank">
+        <a href={props.href} target="_blank" rel="noopener noreferrer" >
             <StyledCardContainer width={props.width} height={props.height}>
                 <StyledContentContainer>
                     <StyledTagsContainer>
