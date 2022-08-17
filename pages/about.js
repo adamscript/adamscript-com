@@ -18,10 +18,10 @@ const SkillIcons = () => {
     return(
         <Container direction="row" padding="0 60px 60px 60px" mdDown="padding: 30px;">
             <Grid size={120} gap={42}>
-                <Icon size={4} label="Javascript (ES6)">
+                <Icon size={4} label="JavaScript (ES6)">
                     <JSIcon />
                 </Icon>
-                <Icon size={4} label="Typescript">
+                <Icon size={4} label="TypeScript">
                     <TSIcon />
                 </Icon>
                 <Icon size={4} label="Java">
@@ -75,11 +75,10 @@ export default function About() {
                 <Container spacing={60} maxWidth="1020px" padding="0 30px 0 30px" mdDown="padding: 0;">
                     <Typography size="h2" weight="black" color="secondary" mdDown="font-size: 48px">About me</Typography>
                     <Typography size="h6" weight="medium">
-                        I graduated with BA in Information Technology from University of Amikom Yogyakarta in 2021.<br /><br />
-                        I&apos;ve been curious about all things programming but that is not until 2017 when I learned programming for the first time that I finally figured out that this is what I want to do professionally.<br /><br />
-                        My first programming language is Python, and ever since then I&apos;ve learned a lot and along my journey I&apos;ve created many apps with various technologies such as full stack web apps, automation script for 3d animation, and video games. I&apos;m pretty much comfortable with a variety of technologies.<br /><br />
-                        Beside programming, I have a few hobbies which include video & photo editing, graphic design, 3D Modeling & Animation, I dabbles around music and filmmaking, and trying my best to get better in competitive online games.<br /><br />
-                        If you are looking for a software engineer who never stops learning and is eager to solve some problems to add to your team, feel free to reach out and say hello! I&apos;m also down to talk about movies, music, video games, and the latest technologies.<br /><br />
+                        I graduated with Bachelor in Information Technology from University of Amikom Yogyakarta in 2021.<br /><br />
+                        My first programming language is Python. This language was what introduced me to the intricate yet exciting world of software development. Along my journey, I have built many apps with various tools and technologies, such are full-stack web apps, an automation script, and video games.<br /><br />
+                        Nowadays, I&apos;m spending my time building web apps while trying to learn the tools and technologies used in the industry, along with some best practices in programming. When I&apos;m not coding, I spend it working on some side projects for some clients involving digital media. I collaborated with a software house company where they asked me to design and develop their company profile, social media content, and explainer videos for the web apps and mobile apps they built. I gained a few insights into web development from these projects.<br /><br />
+                        In my off times, I like to spend my time watching movies and tv shows. I&apos;m a huge movie fan and love anything to do with filmmaking. I also enjoy playing video games, sometimes with some friends, even though I still have a lot to learn when it comes to competitive games.<br /><br />
                     </Typography>
                 </Container>
             </Container>
@@ -102,8 +101,8 @@ export default function About() {
                         <Container spacing={24}>
                             <Typography size="h5" weight="medium">Languages</Typography>
                             <Container direction="row" spacing={6} wrap>
-                                <Chip>Javascript (ES6)</Chip>
-                                <Chip>Typescript</Chip>
+                                <Chip>JavaScript (ES6)</Chip>
+                                <Chip>TypeScript</Chip>
                                 <Chip>Java</Chip>
                                 <Chip>C#</Chip>
                                 <Chip>Python</Chip>

@@ -179,7 +179,7 @@ export default function AppBar(){
               <Link href="/contact" passHref>
                 <Navigation>Contact</Navigation>
               </Link>
-              <LinkButton width="98px" href="#" external>Resume</LinkButton>
+              <LinkButton width="98px" href="/AdamDarmawanResume.pdf" external>Resume</LinkButton>
             </AppBarNavigation>
             <AppBarNavigation mdUp="display: none;" mdDown="flex: 1; justify-content: end;">
               <IconButton onClick={() => { menuOpen ? setMenuOpen(false) : setMenuOpen(true); setTransitionDuration(0.2); }}>
@@ -208,7 +208,7 @@ export default function AppBar(){
                 <Link href="/contact" passHref>
                     <Navigation>Contact</Navigation>
                 </Link>
-                <LinkButton width="98px" href="#" external>Resume</LinkButton>
+                <LinkButton width="98px" href="/AdamDarmawanResume.pdf">Resume</LinkButton>
             </Container>
             <Container position="fixed" bottom="30px">
               <SocialsHoriz />

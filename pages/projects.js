@@ -75,8 +75,8 @@ const FeaturedProject = () => {
         </Container>
 
         <Container direction="row" width="100%" spacing={32}>
-          <LinkButton href="https://tomateto.com" width="100%">Visit Tomateto</LinkButton>
-          <LinkButton href="https://github.com/adamscript/tomateto-react" width="100%">View on Github</LinkButton>
+          <LinkButton href="https://tomateto.com" width="100%" external>Visit Tomateto</LinkButton>
+          <LinkButton href="https://github.com/adamscript/tomateto-react" width="100%" external>View on Github</LinkButton>
         </Container>
       </Container>
 
@@ -115,7 +115,7 @@ export default function Projects() {
                 <p>First iteration of my personal website built with Next.js and hosted with Vercel.</p>
                 <div>
                   <Container direction="row" spacing={6} wrap>
-                    <Chip>Javascript</Chip>
+                    <Chip>JavaScript</Chip>
                     <Chip>React</Chip>
                     <Chip>Next.js</Chip>
                     <Chip>styled-components</Chip>
@@ -138,14 +138,14 @@ export default function Projects() {
                 <p>A web app to keep you on track of books that you read.</p>
                 <div>
                   <Container direction="row" spacing={6} wrap>
-                    <Chip>Javascript</Chip>
+                    <Chip>JavaScript</Chip>
                     <Chip>HTML</Chip>
                     <Chip>CSS</Chip>
                     <Chip>Google Books API</Chip>
                   </Container>
                 </div>
               </Card>
-              <Card href="4" src={ojekleagueScreenshot}>
+              <Card href="https://play.unity.com/mg/other/webgl-builds-233966" src={ojekleagueScreenshot}>
                 <p>Ojek League</p>
                 <p>Imagine a soccer game, but with taxi bikes and a giant ball. Ojek League is a vehicular soccer game inspired by Rocket League and built with Unity game engine.</p>
                 <div>
@@ -155,7 +155,7 @@ export default function Projects() {
                   </Container>
                 </div>
               </Card>
-              <Card href="5" src={sheepofflineScreenshot}>
+              <Card href="https://play.unity.com/mg/other/webgl-builds-233959" src={sheepofflineScreenshot}>
                 <p>Sheep Offline</p>
                 <p>A simple endless runner game inspired by Google Chrome Dinosaur Game and built with Unity game engine.</p>
                 <div>
