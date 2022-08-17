@@ -35,7 +35,7 @@ const StyledTextArea = styled.textarea`
 `;
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("process.env.NEXT_PUBLIC_FORM");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
 
   if (state.succeeded) {
     return <p>Thanks for your submission!</p>;
