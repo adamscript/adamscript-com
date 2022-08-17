@@ -92,7 +92,7 @@ export default function Home() {
                             I enjoy learning new things, solving problems, and building stuff, especially the ones that you can interact with.
                             So far I&apos;ve built two <HighlightTypography>video games</HighlightTypography>, an <HighlightTypography>automation script</HighlightTypography>, a few websites, and a <HighlightTypography>social media web app</HighlightTypography>. <br /><br />
                             I am familiar with <HighlightTypography>single-page applications (SPA), cloud deployment, containerization, REST API, test-driven development (TDD), and CI/CD</HighlightTypography>.<br /><br />
-                            I have deployed and currently maintaining my latest project, a social media web app <LinkTypography href="https://tomateto.com">Tomateto</LinkTypography>, where I implemented these practices.
+                            I have deployed and currently maintaining my latest project, a social media web app <LinkTypography href="https://tomateto.com">Tomateto</LinkTypography>, where I implemented those practices.
                         </Typography>
                     </Container>
                     <Container flex="auto" alignItems="center" justifyContent="center" width="100%">
