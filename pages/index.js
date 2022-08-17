@@ -91,8 +91,8 @@ export default function Home() {
                             Hello again! I&apos;m mostly known as Aji but you can call me Adam, whichever you&apos;re most comfortable with. <br /><br />
                             I enjoy learning new things, solving problems, and building stuff, especially the ones that you can interact with.
                             So far I&apos;ve built two <HighlightTypography>video games</HighlightTypography>, an <HighlightTypography>automation script</HighlightTypography>, a few websites, and a <HighlightTypography>social media web app</HighlightTypography>. <br /><br />
-                            I have knowledge in <HighlightTypography>single-page applications (SPA), cloud deployment, containers, REST API, test-driven development (TDD), and CI/CD</HighlightTypography>.<br /><br />
-                            I have deployed and currently maintaining my latest project, a social media web app <LinkTypography href="https://tomateto.com">Tomateto</LinkTypography>, where I put these knowledge to practice.
+                            I am familiar with <HighlightTypography>single-page applications (SPA), cloud deployment, containerization, REST API, test-driven development (TDD), and CI/CD</HighlightTypography>.<br /><br />
+                            I have deployed and currently maintaining my latest project, a social media web app <LinkTypography href="https://tomateto.com">Tomateto</LinkTypography>, where I implemented these practices.
                         </Typography>
                     </Container>
                     <Container flex="auto" alignItems="center" justifyContent="center" width="100%">
