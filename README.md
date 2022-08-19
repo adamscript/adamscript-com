@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/69242299/183228078-e3faa53e-752e-442b-8d12-660654a909dd.png" alt="adamscript-com_screenshot" />
+  <img src="https://user-images.githubusercontent.com/69242299/185120822-6475db5f-0b59-4f87-98d9-0996c520d866.png" alt="adamscript-com_screenshot" />
 </p>
 
 This is the first iteration of my personal website built with Next.js and hosted with Vercel. For this iteration I tried to not put too many bells and whistles to keep the website simple and informative.
