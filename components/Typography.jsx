@@ -59,9 +59,13 @@ const Typography = (props) => {
 
 const LinkTypography = (props) => {
     return(
+        !props.external ?
         <StyledLink href={props.href}>
             {props.children}
-        </StyledLink>
+        </StyledLink> :
+        <StyledLink href={props.href} target="_blank" rel="noopener noreferrer">
+            {props.children}
+        </StyledLink> 
     )
 }
 

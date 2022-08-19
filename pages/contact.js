@@ -24,7 +24,7 @@ export default function Contact() {
                           <br /><br />
                           Alternatively, my inbox is always open at <LinkTypography href="mailto:adam@adamscript.com">adam@adamscript.com</LinkTypography>.
                           <br /><br />
-                          You can also find me on <LinkTypography href="https://www.linkedin.com/in/adamscript">LinkedIn</LinkTypography>.
+                          You can also find me on <LinkTypography href="https://www.linkedin.com/in/adamscript" external>LinkedIn</LinkTypography>.
                         </Typography>
                         <ContactForm />
                     </Container>
